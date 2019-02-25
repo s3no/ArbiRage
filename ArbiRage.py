@@ -27,7 +27,7 @@ def houseOdds():
        outcomeLabel.grid(row=3, column=1)
        wageOne = Label(window, text="Team One Bet: $0")
        wageOne.grid(row=4,column=0)
-       wageTwo = Label(window, text="Team Two Bet: $0" + str(w1))
+       wageTwo = Label(window, text="Team Two Bet: $0")
        wageTwo.grid(row=5,column=0)
     elif casTake == 100:       
        outcomeLabel = Label(window, text="EVEN SPREAD----100%")
