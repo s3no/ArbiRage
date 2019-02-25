@@ -39,11 +39,11 @@ def houseOdds():
 window = Tk()
 
 #Setting up labels and User entrys
-totalWage = Label(window, text="Enter First Teams Odds: ")
+totalWage = Label(window, text="Enter Your Total Wage Amount: ")
 entryWage = Entry(window)
-oddOne = Label(window, text="Enter First Teams Odds: ")
+oddOne = Label(window, text="Enter First Teams BestOdds: ")
 entryOne = Entry(window)
-oddTwo = Label(window, text="Enter Second Teams Odds: ")
+oddTwo = Label(window, text="Enter Second Teams BestOdds: ")
 entryTwo = Entry(window)
 acceptButton = Button(window, text="Calculate", command= houseOdds)
 
