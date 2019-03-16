@@ -11,16 +11,20 @@ def houseOdds():
     tempTwo = 1 / float(teamTwo)
     tempThree = tempOne + tempTwo
     casTake = tempThree * 100
+    
     w1 = round(float(wager) / (tempOne / tempTwo + 1), 2)
     w2 = round(float(wager) / (tempTwo / tempOne + 1), 2)
+
+    profitOne = float(w2) * float(wager)
+    profitTwo = float(w1) * float(wager)
 
     #Outputs if the House Wins OR, If you win displays how much to place on each team. 
     if float(casTake) < 100:
        outcomeLabel = Label(window, text="!!!PLACE BET!!!")
        outcomeLabel.grid(row=3, column=1)
-       wageOne = Label(window, text="Team One Bet: $" + str(w2))
+       wageOne = Label(window, text="Team One Bet: $" + str(w2) + "       --Profit: $" + str(profitOne))
        wageOne.grid(row=4,column=0)
-       wageTwo = Label(window, text="Team Two Bet: $" + str(w1))
+       wageTwo = Label(window, text="Team Two Bet: $" + str(w1) + "       --Profit: $" + str(profitTwo))
        wageTwo.grid(row=5,column=0)
     elif casTake > 100:
        outcomeLabel = Label(window, text="BAIL---House Wins")
