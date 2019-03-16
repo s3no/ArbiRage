@@ -1,5 +1,5 @@
 # ArbiRage
-Arbitrage Betting calculator
+Python-3.7 Arbitrage Betting calculator
 
 ArbiRage is a Proof of concept I threw together to understand how the Arbitrage betting system works. 
 
