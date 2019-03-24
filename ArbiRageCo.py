@@ -15,11 +15,11 @@ def houseOdds():
    elif casTake < 100:
       print("Percentage(below 100% YOU WIN!!!!!!):" + str(casTake) + "%" + "\n")
 
-   w1 = float(wageTotal) / (tempOne / tempTwo + 1)
-   w2 = float(wageTotal) / (tempTwo / tempOne + 1)
+   w1 = round(float(wageTotal) / (tempOne / tempTwo + 1))
+   w2 = round(float(wageTotal) / (tempTwo / tempOne + 1))
 
-   profitOne = float(w2) * float(wageTotal)
-   profitTwo = float(w1) * float(wageTotal)
+   profitOne = float(w2) * float(teamOne)
+   profitTwo = float(w1) * float(teamTwo)
                         
    if float(casTake) < 100:
       print("!!!!!PLACE BET!!!!!" + "\n")
@@ -43,3 +43,4 @@ while True:
 
 
                            
+         
