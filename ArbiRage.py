@@ -13,14 +13,12 @@ def houseOdds():
     casTake = tempThree * 100
     w1 = round(float(wager) / (tempOne / tempTwo + 1), 2)
     w2 = round(float(wager) / (tempTwo / tempOne + 1), 2)
-
-    #Shows Winnins Per Team If They Were To Win
-
+  
 
     #Outputs if the House Wins OR, If you win displays how much to place on each team. 
     if float(casTake) < 100:
-       profitOne = float(w2) * float(teamOne)
-       profitTwo = float(w1) * float(teamTwo)
+       profitOne = round(float(w2) * float(teamOne) - float(wager),2)
+       profitTwo = round(float(w1) * float(teamTwo) - float(wager),2)
        outcomeLabel = Label(window, text="!!!PLACE BET!!!")
        outcomeLabel.grid(row=3, column=1)
        wageOne = Label(window, text="Team One Bet: $" + str(w2) + "       --Profit: $" + str(profitOne))
@@ -30,9 +28,9 @@ def houseOdds():
     elif casTake > 100:
        outcomeLabel = Label(window, text="BAIL---House Wins")
        outcomeLabel.grid(row=3, column=1)
-       wageOne = Label(window, text="Team One Bet: $0")
+       wageOne = Label(window, text="BAIL: House Wins - " + str(casTake) + " ")
        wageOne.grid(row=4,column=0)
-       wageTwo = Label(window, text="Team Two Bet: $0")
+       wageTwo = Label(window, text="BAIL: House Wins - " + str(casTake) + " ")
        wageTwo.grid(row=5,column=0)
     elif casTake == 100:       
        outcomeLabel = Label(window, text="EVEN SPREAD----100%")
@@ -63,3 +61,4 @@ acceptButton.grid(row=3, column=0)
 
 #Runs the main window
 window.mainloop()
+
