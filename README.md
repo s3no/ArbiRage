@@ -11,8 +11,6 @@ For information on how the Arbitrage betting system works. Feel free to watch th
 gave me the idea and insparation for this at the following URL: https://youtu.be/TGinzvSDayU
 
 ~~A automated version will be released soon and all feedback is greatly appreciated.~~<br>
-DISCLAIMER: If you win to much and try to cash out, a few websites will ban you for "insider knowledge" with
-no option to appeal.<br>
-A work around is needed. 
+
 
 
