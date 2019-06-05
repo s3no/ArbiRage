@@ -40,6 +40,7 @@ def houseOdds():
   
 #Sets up Main Window
 window = Tk()
+window.title("ArbiRage")
 
 #Setting up labels and User entrys
 totalWage = Label(window, text="Enter Your Total Wage Amount: ")
